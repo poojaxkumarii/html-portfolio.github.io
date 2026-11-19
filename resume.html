@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pooja Kumari | HTML Developer Resume</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #222;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        header {
+            background-color: #1a202c;
+            padding: 16px 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 6px 14px;
+            border-radius: 4px;
+            transition: background-color 0.3s ease;
+        }
+
+        nav a:hover,
+        nav a.active {
+            background-color: #6b46c1;
+        }
+
+        /* Main Container */
+        main {
+            max-width: 850px;
+            margin: 32px auto;
+            background: #fff;
+            padding: 36px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        /* Profile Header */
+        .profile-header {
+            display: flex;
+            align-items: center;
+            gap: 24px;
+            padding-bottom: 24px;
+            border-bottom: 2px solid #e2e8f0;
+            margin-bottom: 28px;
+        }
+
+        .profile-header img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #6b46c1;
+            background-color: #edf2f7;
+        }
+
+        h1 {
+            font-size: 32px;
+            color: #1a202c;
+            margin-bottom: 4px;
+        }
+
+        .subtitle {
+            font-weight: 600;
+            color: #4a5568;
+            margin-bottom: 6px;
+        }
+
+        h2 {
+            font-size: 22px;
+            color: #1a202c;
+            border-left: 4px solid #6b46c1;
+            padding-left: 10px;
+            margin: 28px 0 16px;
+        }
+
+        /* Education Table */
+        .table-wrapper {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 8px;
+        }
+
+        th, td {
+            border: 1px solid #cbd5e0;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #edf2f7;
+            color: #1a202c;
+        }
+
+        /* Projects */
+        .project-card {
+            margin-bottom: 22px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid #edf2f7;
+        }
+
+        .project-card:last-child {
+            border-bottom: none;
+        }
+
+        .project-title {
+            font-size: 18px;
+            color: #1a202c;
+        }
+
+        .project-role {
+            color: #6b46c1;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .project-card ul {
+            padding-left: 20px;
+        }
+
+        .project-card li {
+            margin-bottom: 6px;
+        }
+
+        .project-card a {
+            color: #6b46c1;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .project-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            margin-top: 28px;
+            padding-top: 20px;
+            border-top: 2px solid #e2e8f0;
+        }
+
+        footer p {
+            margin-bottom: 6px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 600px) {
+            main {
+                margin: 16px;
+                padding: 20px;
+            }
+
+            .profile-header {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href="./index.html">Home</a></li>
+                <li><a class="active" href="./resume.html">My Resume</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="profile-header">
+    <div class="initials-badge">PK</div>
+    <div>
+        <h1>Pooja Kumari</h1>
+        <p class="subtitle">B.Sc. Computer Science Graduate | New Delhi, India</p>
+        <p><i>Skilled in HTML5, CSS3, and turning designs into responsive web pages.</i></p>
+    </div>
+</section>
+
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Course</th>
+                            <th>Institute</th>
+                            <th>Year</th>
+                            <th>Result</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>B.Sc. Computer Science</td>
+                            <td>Delhi University</td>
+                            <td>2026</td>
+                            <td>76.6%</td>
+                        </tr>
+                        <tr>
+                            <td>12<sup>th</sup></td>
+                            <td>RPVV IP EXTN.</td>
+                            <td>2022</td>
+                            <td>89.4%</td>
+                        </tr>
+                        <tr>
+                            <td>10<sup>th</sup></td>
+                            <td>RPVV IP EXTN.</td>
+                            <td>2020</td>
+                            <td>89.6%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div class="project-card">
+                <p class="project-title"><strong>AssignMint</strong> — Classroom Web Portal</p>
+                <p class="project-role"><i>Front-End &amp; Responsive HTML/CSS Developer</i></p>
+                <ul>
+                    <li>Built responsive HTML5 and CSS3 layouts for the dashboard, forms, and class cards.</li>
+                    <li>Adapted the interface for mobile and desktop screens using CSS Flexbox and media queries.</li>
+                    <li><strong>Website Link:</strong> <a href="https://assignmint-app.web.app" target="_blank">AssignMint Live</a></li>
+                </ul>
+            </div>
+
+            <div class="project-card">
+                <p class="project-title"><strong>Moon City Parallax</strong> — Scroll-Animated Landing Page</p>
+                <p class="project-role"><i>HTML5, CSS3 &amp; JavaScript Developer</i></p>
+                <ul>
+                    <li>Built a layered dark-themed hero section and personal web resume using semantic HTML5 and CSS3.</li>
+                    <li>Added scroll-based animations with JavaScript to move visual elements dynamically on scroll.</li>
+                    <li><strong>GitHub Link:</strong> <a href="https://github.com" target="_blank">View Project</a></li>
+                </ul>
+            </div>
+
+            <div class="project-card">
+                <p class="project-title"><strong>College Sports Department Website</strong></p>
+                <p class="project-role"><i>HTML5 &amp; CSS3 Developer</i></p>
+                <ul>
+                    <li>Created a multi-page static website displaying sports schedules and team details.</li>
+                    <li>Organized page structure using HTML5 tables, semantic tags, and external CSS stylesheets.</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer id="contact">
+            <h2>Connect With Me</h2>
+            <p><strong>Email:</strong> 11abcd@gmail.com</p>
+            <p><strong>Mobile No.:</strong> +91-8888888888</p>
+        </footer>
+    </main>
+
+</body>
+</html>
